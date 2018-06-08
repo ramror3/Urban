@@ -1,0 +1,23 @@
+<div class="student_content">
+    <p class="name">Name: 
+      <%= @student.name %>
+    </p>
+    <p class="email">Email: 
+      <%= @student.email %>
+    </p>
+    <p class="learn">Learn: 
+      <%= @student.learn %>
+    </p>
+    <p class="location">Location: 
+      <%= @student.location %>
+    </p>
+    <p class="mobile_number">Mobile Number: 
+      <%= @student.mobile_number %>
+    </p>
+
+    <p class="date">
+      <%= link_to 'Back', students_path, class: "btn btn-primary" %>
+      <%= link_to "Edit", edit_student_path(@student), class: "btn btn-primary" %>
+      <%= link_to "Destroy", student_path, method: :delete, data: { confirm: "Are you sure? "}, class: "btn btn-danger" %>
+    </p>
+</div>

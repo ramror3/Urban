@@ -1,0 +1,7 @@
+<% @students.each do |student| %>
+  <div class="post_wrapper">
+    <h2><%= link_to student.name, student %></h2>
+    <p><%= time_ago_in_words(student.created_at) %></p>
+  </div>
+<% end %>
+
